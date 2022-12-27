@@ -1,0 +1,36 @@
+.wrapper
+{
+    width: 90%;
+    margin-top: 10rem;
+    .firstContent
+    {
+        padding: 2rem 0;
+        border-top: 0.001rem solid var(--white) ;
+        border-bottom: 0.001rem solid var(--white) ;
+    }
+    .secondContent
+    {
+        display: flex;
+        .infomation
+        {
+            flex: 1;
+            padding: 5rem 0;
+        }
+        .socialNetWork
+        {
+            flex: 2;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .icon 
+            {
+                font-size: 3rem;
+                transition: 0.3s;
+                &:hover
+                {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

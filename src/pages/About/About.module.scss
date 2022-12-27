@@ -1,0 +1,13 @@
+.warraper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container
+    {
+        width: 90%;
+        height: 100%;
+        margin-top: 8rem;
+        background-color: yellow;
+    }
+}

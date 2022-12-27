@@ -1,0 +1,72 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Snowburst+One&display=swap');
+:root
+{
+    --color--background : #010028;
+    --color--primary : #100F0F;
+    --color--banner : #252222;
+    --color--text : #F1F1F1;
+    --color--hover : #EA505A;
+    --color--button : #0C0241;
+    --white : #ffffff;
+    --black : #100F0F;
+    --purple : #04014a;
+    --pink : #CBA0CE;
+    --blue : #6D8AC7;
+    --aqua : #27E2F0;
+    // Default Layout
+    --default--layout--header-height : 6rem;
+    // --default--layout--width: 80%;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar 
+{
+    width: 0px;
+}
+html 
+{
+    font-size:62.5% ;
+}
+body
+{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    background-color: var(--color--background);
+    color: var(--color--text);
+}
+button, input, [tabindex] {
+    font-family: 'Roboto Mono', monospace;
+    outline: none;
+    border: none;
+}
+a[href]
+{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+h1
+{
+    font-family: 'Snowburst One', cursive;
+}
+h2
+{
+    font-size: 5rem;
+    background: -webkit-linear-gradient(var(--pink), var(--blue), var(--aqua));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h4
+{
+    font-size: 3rem;
+    background: -webkit-linear-gradient(var(--pink), var(--blue), var(--aqua));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,60 @@
+.wrapper
+{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    position:fixed;
+    z-index: 1000;
+}
+.inner
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    input 
+    {
+        display: none;
+        &:checked ~ .menu 
+        {
+            left: 10rem;
+        }
+    }
+}
+.menu
+{
+    display: flex;
+    gap: 2rem;    
+}
+.menuChild
+{
+    display: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .wrapper
+    {
+        top: 1rem;
+    }
+    .menuChild
+    {
+        display: block;
+        font-size: 3rem;
+    }
+    .menu
+    {
+        background-color: var(--color--background);
+        position: fixed;
+        top: 0rem;
+        left: 500rem;
+        bottom: 0;
+        right: 0rem;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        gap: 5rem;
+        transition: 1s;
+    }
+}
